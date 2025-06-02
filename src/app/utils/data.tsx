@@ -6,8 +6,11 @@ import nestjsIcon from '@/app/assets/app_screen/svg_logo/nestjs.svg'
 import nodejsIcon from '@/app/assets/app_screen/svg_logo/nodejs.svg'
 import webrtcIcon from '@/app/assets/app_screen/svg_logo/webrtc.svg'
 import socketIcon from '@/app/assets/app_screen/svg_logo/socket.svg'
-import appwriteIcon from '@/app/assets/app_screen/svg_logo/appwrite.svg'
 import socketioIcon from '@/app/assets/app_screen/svg_logo/socketio.svg'
+import mazgarIcon from '@/app/assets/app_screen/svg_logo/mazgar.png'
+
+
+
 
 import cafeImageWithoutMockup from '@/app/assets/app_screen/without_mockup/cafe.png'
 import callImageWithoutMockup from '@/app/assets/app_screen/without_mockup/call.png'
@@ -15,6 +18,7 @@ import iotImageWithoutMockup from '@/app/assets/app_screen/without_mockup/iot.pn
 import kashtImageWithoutMockup from '@/app/assets/app_screen/without_mockup/kasht.png'
 import shopImageWithoutMockup from '@/app/assets/app_screen/without_mockup/shop.png'
 import taskImageWithoutMockup from '@/app/assets/app_screen/without_mockup/task.png'
+import mazgarImageWithoutMockup from '@/app/assets/app_screen/without_mockup/mazgar.png'
 
 import { StaticImageData } from 'next/image'
 
@@ -38,32 +42,13 @@ export const projects: IProject[] = [
         index: 0,
         title: "Flutter Shopping App",
         descriptionTitle: "A Shopping application ",
-        description:"a flutter Applicatoin for shopping clothes , using Appwrite for Backend .The app supports a smooth toggle between light and dark mode,The app offers two languages: English and Persian. The user can switch between these two languages in the app's settings. The app will automatically adjust the layout for RTL (Right-to-Left) support for Persian.",
+        description:"a flutter Applicatoin for shopping clothes , using Appwrite for Backend .The app supports a smooth toggle between light and dark mode,The app offers two languages: English and Persian. The user can switch between these two languages in the app's settings.",
         hasDownloadApk: true,
         image: [flutterIcon],
         apkUrl: 'https://www.shayadakar.ir/APKS/shop.apk',
         imageWithoutMockup: shopImageWithoutMockup,
         githubUrl :"https://github.com/m8mamad2/shop_app" ,
     },
-    { 
-        index: 1,
-        title: "Flutter Chat Application",
-        descriptionTitle: "Flutter Chat Application And Supabase For Backend",
-        description: "This Flutter-based chat application, powered by Supabase as its backend, offers a comprehensive communication platform. Users can exchange voice messages, text messages, images, and videos, making conversations dynamic and versatile. ",
-        hasDownloadApk: false,
-        image: [flutterIcon, appwriteIcon],
-        imageWithoutMockup: shopImageWithoutMockup,
-        apkUrl:'https://github.com/m8mamad2/chat_app',
-        githubUrl :"https://github.com/m8mamad2/chat_app" ,
-    },
-    // { 
-    //     title: "Translating Application",
-    //     descriptionTitle: "A Flutter base Translating Application ",
-    //     description: "This Flutter application offers a comprehensive solution for translating English text to Persian,performing speech recognition, and recognizing text from images ",
-    //     hasDownloadApk: true,
-    //     image: "",
-    //     githubUrl :"https://github.com/m8mamad2/translator_app" ,
-    // },
     { 
         index: 2,
         title: "IoT LED Control Application ",
@@ -76,17 +61,6 @@ export const projects: IProject[] = [
         githubUrl: "https://github.com/m8mamad2/iot_app",
     },
     { 
-        index: 3,
-        title: "Kasht",
-        descriptionTitle:"A Social Media App for Agricultural industry",
-        description: "is a social media app built with Flutter, designed for users to share and explore photos and videos. The app supports user-generated content, follows the social interaction model with features such as likes, comments, and a personalized feed, have explore , chat , notification and ...",
-        hasDownloadApk: true,
-        image: [flutterIcon,kashtIcon],
-        imageWithoutMockup: kashtImageWithoutMockup,
-        apkUrl:"https://www.shayadakar.ir/APKS/kasht.apk",
-        githubUrl: "Not Have Repo",
-    },
-    { 
         index: 4,
         title: "Food Delivery App",
         descriptionTitle:"Food Delivery App with Flutter And Nestjs",
@@ -96,6 +70,17 @@ export const projects: IProject[] = [
         imageWithoutMockup: cafeImageWithoutMockup,
         apkUrl:'https://www.shayadakar.ir/APKS/cafe.apk',
         githubUrl: "https://github.com/m8mamad2/cafe_app",
+    },
+    { 
+        index: 3,
+        title: "Kasht",
+        descriptionTitle:"A Social Media App for Agricultural industry",
+        description: "is a social media app built with Flutter, designed for users to share and explore photos and videos. The app supports user-generated content, follows the social interaction model with features such as likes, comments, and a personalized feed, have explore , chat , notification and ...",
+        hasDownloadApk: true,
+        image: [flutterIcon,kashtIcon],
+        imageWithoutMockup: kashtImageWithoutMockup,
+        apkUrl:"https://www.shayadakar.ir/APKS/kasht.apk",
+        githubUrl: "Not Have Repo",
     },
     { 
         index: 5,
@@ -118,5 +103,16 @@ export const projects: IProject[] = [
         imageWithoutMockup: taskImageWithoutMockup,
         apkUrl:"https://www.shayadakar.ir/APKS/task.apk",
         githubUrl: "https://github.com/m8mamad2/task_app",
+    },
+    { 
+        index: 1,
+        title: "Mazgar",
+        descriptionTitle: "Payroll software",
+        description: "Mazgar is a payroll application that creates a transparent relationship between employers and workers. Workers can log their work based on various methods (quantity, percentage, fixed amount, daily, or hourly), and after approval by the employer, they can instantly view their earnings in real-time.This application was developed as a full-stack project, covering both frontend and backend functionalities",
+        hasDownloadApk: false,
+        image: [mazgarIcon],
+        imageWithoutMockup: mazgarImageWithoutMockup,
+        apkUrl:'https://mazgar.com/',
+        githubUrl :"https://mazgar.com/" ,
     },
 ];

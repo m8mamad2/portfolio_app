@@ -13,7 +13,7 @@ export default function HireMe(){
         <h1 className="font-bold text-xl sm:text-5xl my-5 text-center">{"Tell me about your next \nproject"}</h1>
         <div className="flex flex-row gap-6">
             <Button 
-                onClick={()=> window.location.href = `https://t.me/flu_tter`}
+                onClick={()=> window.location.href = `https://t.me/flut_ter`}
                 className="px-10 py-8 rounded-full text-white" 
                 variant="bordered">Telegram</Button>
 

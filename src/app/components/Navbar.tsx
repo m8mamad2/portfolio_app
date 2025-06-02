@@ -10,16 +10,17 @@ export default function NavBar() {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   return (
-    <Navbar shouldHideOnScroll className='bg-black'>
+    <Navbar shouldHideOnScroll>
       <NavbarBrand>
-        <p className="font-bold text-lg text-white sm:text-xl">👋  Hi , Welcome to my Portfolio Blog</p>
+        <p className="font-bold text-lg sm:text-xl">👋  Hi , Welcome to my Portfolio Blog</p>
       </NavbarBrand>
         
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden lg:flex ">
           <Button onClick={onOpen} className="px-9" color="primary" variant="ghost">
             Contact Me
           </Button>
+          {/* <LandingButton style="!w-28"/> */}
         </NavbarItem>
       </NavbarContent>
 
@@ -28,10 +29,11 @@ export default function NavBar() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">My Information</ModalHeader>
-              <ModalBody className="text-white">
-                <h1>Email: <p>x@gmail.com</p></h1>
-                <h1>Telegram: <p>@</p></h1>
-                <h1>Phone Number: <p>0000000</p></h1>
+              <ModalBody>
+                <h1 className="text-gray-400 text-xs">Email: <p className="text-white        text-base">m8mamad2@gmail.com</p></h1>
+                <h1 className="text-gray-400 text-xs">Telegram: <p className="text-white     text-base">@flut_ter</p></h1>
+                <h1 className="text-gray-400 text-xs">Phone Number: <p className="text-white text-base">09371617431</p></h1>
+                <a className="text-primary" href='/resume.pdf' download>Download CV</a>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="light" onPress={onClose}>

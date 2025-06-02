@@ -6,12 +6,9 @@ import {
   IconBrandReact,
   IconUsersGroup,
   IconBrandFlutter,
-  IconApps
+  IconApps,
 } from "@tabler/icons-react";
 import { cn } from "../utils/cn";
-
-
-
 
 export function Skills() {
   const features = [
@@ -29,44 +26,50 @@ export function Skills() {
     },
     {
       title: "React Frontend Development",
-      description:"My experience with React enables me to create dynamic, responsive, and interactive user interfaces",
+      description:
+        "My experience with React enables me to create dynamic, responsive, and interactive user interfaces",
       icon: <IconBrandReact />,
     },
     {
       title: "Application Deployment",
-      description: "With extensive experience working in Linux environments, I manage and deploy applications seamlessly across various distributions",
+      description:
+        "With extensive experience working in Linux environments, I manage and deploy applications seamlessly across various distributions",
       icon: <IconTerminal2 />,
     },
     {
       title: "Teamwork",
-      description: "I thrive in team environments, bringing strong communication skills, a collaborative mindset, and a commitment to shared goals.",
+      description:
+        "I thrive in team environments, bringing strong communication skills, a collaborative mindset, and a commitment to shared goals.",
       icon: <IconUsersGroup />,
     },
     {
       title: "Performance Optimization",
-      description:"I am dedicated to performance optimization, whether it’s reducing page load times, optimizing mobile applications, or ensuring backend services handle high traffic efficiently",
+      description:
+        "I am dedicated to performance optimization, whether it’s reducing page load times, optimizing mobile applications, or ensuring backend services handle high traffic efficiently",
       icon: <IconApps />,
     },
     {
       title: "Continuous Learning ",
-      description:"I am constantly driven to learn and explore new technologies",
+      description:
+        "I am constantly driven to learn and explore new technologies",
       icon: <IconSkateboarding />,
     },
     {
       title: "Software Support",
-      description: "Beyond development, I provide reliable software support, ensuring that applications run smoothly post-launch.",
+      description:
+        "Beyond development, I provide reliable software support, ensuring that applications run smoothly post-launch.",
       icon: <IconHeart />,
     },
   ];
   return (
-    <>
-        <h1 className="text-4xl font-bold  sm:ml-[20rem] sm:my-10  my-18">Skills</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div >
+      <h1 className="text-4xl font-bold sm:my-10 2xl:mx-60 xl:mx-10 mx-3 my-16">Skills</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
         {features.map((feature, index) => (
-            <Feature key={feature.title} {...feature} index={index} />
+          <Feature key={feature.title} {...feature} index={index} />
         ))}
-        </div>
-    </>
+      </div>
+    </div>
   );
 }
 

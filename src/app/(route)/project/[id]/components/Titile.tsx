@@ -7,16 +7,16 @@ import Link from "next/link";
 
 export function BackgroundGradientDemo({ githubUrl, title }: { githubUrl: string, title:string } ) {
   return (
-    <div className="flex flex-col sm:flex-row justify-between w-full">
-      <BackgroundGradient className="rounded-[22px] sm:h-56 sm:w-[45rem] p-4 sm:p-10 flex justify-center items-center  ">
-        <p className="w-full font-bold sm:text-4xl ">{`🏷️\n ${ title }`}</p>
+    <div className="flex flex-col sm:flex-row justify-between w-full h-full overflow-x-hidden">
+      <BackgroundGradient className="rounded-[22px]  w-96 xl:w-[45rem] p-4 sm:p-10 flex flex-col justify-center items-center  ">
+        <p className="w-full  font-bold sm:text-4xl ">{`🏷️\n ${ title }`}</p>
       </BackgroundGradient>
       <PinContainer
         className=""
         title={ githubUrl }
         href={  githubUrl }
       >
-        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[24rem] h-52 ">
+        <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-56 xl:w-96 h-48 ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
             Github Repository
           </h3>

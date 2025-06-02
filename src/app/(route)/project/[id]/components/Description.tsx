@@ -4,11 +4,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/app/utils/cn";
+import Image from "next/image";
 
 export const Description = ({ descriptionTitle, description }: { descriptionTitle:string, description:string, })=>{
     return <WobbleCard
     containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 sm:py-0 mt-10 sm:mt-0 sm:min-h-[500px] lg:min-h-[300px]"
-    className=""
+    className="py-9"
   >
     <div className="max-w-xs">
       <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
@@ -18,12 +19,12 @@ export const Description = ({ descriptionTitle, description }: { descriptionTitl
         {description}
       </p>
     </div>
-    <img
+    <Image
       src="https://www.the420.in/wp-content/uploads/2024/03/Github-bad-code-crisis-2048x1068.png"
       width={600}
       height={600}
       alt="linear demo image"
-      className="absolute right-[1%] grayscale hidden sm:flex filter -bottom-10 object-contain rounded-2xl"
+      className="absolute right-[1%] grayscale hidden lg:flex filter -bottom-10 object-contain rounded-2xl"
     />
   </WobbleCard>
 }
