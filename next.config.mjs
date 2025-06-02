@@ -10,8 +10,8 @@ const nextConfig = {
   // basePath:'/your-repo-name',
   images: { unoptimized: true },
   trailingSlash: true,
-  basePath: isGithubPages ? '/portfolio' : '',
-    assetPrefix: isGithubPages ? '/portfolio/' : '',
+  basePath: isGithubPages ? '/portfolio_app' : '',
+  assetPrefix: isGithubPages ? '/portfolio_app/' : '',
 };
 
 export default nextConfig;
